@@ -1,0 +1,52 @@
+@import '@/constant/style.scss';
+.exploreWrapper {
+  margin: 0;
+  width: 200%;
+  text-align: center;
+  background-color: $ncmRed;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+}
+
+.isTransitioning {
+  transition: transform 0.2s ease-out;
+}
+
+.custom {
+  position: relative;
+  background-color: #fff;
+  padding: 0 0 1px 0;
+}
+
+.lists {
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.innerWrapper {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-width: 170px 0 $bottomBarHeight 0;
+  width: 50%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.banners {
+  border-radius: 10px;
+  margin: 10px auto 10px auto;
+  -webkit-mask-image: -webkit-radial-gradient(white, black); // TODO
+  width: 98%;
+  overflow: hidden;
+}
+
+.redBg {
+  position: absolute;
+  background-color: $ncmRed;
+  width: 100%;
+  height: 120px;
+}

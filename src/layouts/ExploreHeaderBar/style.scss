@@ -1,0 +1,55 @@
+@import '@/constant/style.scss';
+
+.headerBar {
+  height: 170px;
+}
+
+.wrapper {
+  position: relative;
+  background-color: $ncmRed;
+  margin: 10px 0 0 0;
+}
+
+.slideNav {
+  display: flex;
+  position: relative;
+  padding: 0 0 10px 0;
+  list-style-type: none;
+  justify-content: center;
+  a {
+    width: 250px;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+.slider {
+  transition: all ease 0.4s;
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+  left: 0;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.index0 {
+  transform: translate(190px, 0);
+}
+
+.index1 {
+  transform: translate(480px, 0);
+}
+
+.back {
+  display: block;
+  height: $headerBarHeight;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: $headerBarHeight;
+  font-weight: bolder;
+  padding-left: 30px;
+  i {
+    font-size: 40px;
+  }
+}

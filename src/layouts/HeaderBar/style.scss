@@ -1,0 +1,42 @@
+@import '@/constant/style.scss';
+
+.headerBar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+  height: $headerBarHeight - 5px;
+  background-color: $ncmRed;
+  overflow: hidden;
+}
+
+.playingLink {
+  position: absolute;
+  right: 20px;
+  i {
+    font-size: 50px;
+  }
+}
+
+.search {
+  &::placeholder {
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
+  display: block;
+  font-size: 30px;
+  line-height: 50px;
+  height: 45px;
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 30px;
+  color: #eee;
+  background-color: rgba($color: #eee, $alpha: 0.3);
+  border: 1px solid $ncmRed;
+  border-radius: 100px;
+  outline: none;
+}
